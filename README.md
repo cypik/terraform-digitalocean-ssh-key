@@ -20,7 +20,7 @@ To get started, make sure you have configured your DigitalOcean provider. You ca
 
 ```hcl
 module "ssh-key" {
-  source         = "https://github.com/opz0/terraform-digitalocean-ssh-key.git?ref=v1.0.0"
+  source         = "git::https://github.com/opz0/terraform-digitalocean-ssh-key.git?ref=v1.0.0"
   key_path       = "~/.ssh/id_rsa.pub"
   key_name       = "devops"
   enable_ssh_key = true
