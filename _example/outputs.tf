@@ -8,6 +8,7 @@ output "id" {
   description = "The unique ID of the key."
 }
 
+
 output "public_key" {
   value       = module.ssh-key.public_key
   description = "The text of the public key."
