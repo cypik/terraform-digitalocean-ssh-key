@@ -1,6 +1,3 @@
-#Module      : SSH KEY
-#Description : Provides a DigitalOcean SSH key resource to allow you to manage SSH keys for Droplet access.
-
 variable "key_path" {
   type        = string
   default     = ""
