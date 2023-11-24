@@ -18,9 +18,11 @@ This Terraform configuration sets up an SSH key on DigitalOcean, enabling secure
 
 To get started, make sure you have configured your DigitalOcean provider. You can use the following code as a starting point:
 
+## Example: ssh-key
+
 ```hcl
 module "ssh-key" {
-  source         = "git::https://github.com/opz0/terraform-digitalocean-ssh-key.git?ref=v1.0.0"
+  source         = "git::https://github.com/cypik/terraform-digitalocean-ssh-key.git?ref=v1.0.0"
   key_path       = "~/.ssh/id_rsa.pub"
   key_name       = "devops"
   enable_ssh_key = true
@@ -33,11 +35,11 @@ key_path (string): The local path to the SSH public key.
 key_name (string): The name of the SSH key on DigitalOcean.
 enable_ssh_key (bool): Flag indicating whether to enable the SSH key.
 ## Examples
-For detailed examples on how to use this module, please refer to the 'examples' directory within this repository.
+For detailed examples on how to use this module, please refer to the '[examples](https://github.com/cypik/terraform-digitalocean-ssh-key/blob/master/_example)' directory within this repository.
 ## Author
 Your Name Replace '[License Name]' and '[Your Name]' with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/opz0/terraform-digitalocean-ssh-key/blob/master/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/cypik/terraform-digitalocean-ssh-key/blob/master/LICENSE) file for details.
 
 
