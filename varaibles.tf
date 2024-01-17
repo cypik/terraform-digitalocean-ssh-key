@@ -18,6 +18,6 @@ variable "enable_ssh_key" {
 }
 variable "ssh_key" {
   type        = string
-  default     = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2Nv42WHrrdhfhfgdyttiukjN3dugCAmoVrnNBlqXhRNo1bqsKGgqM/3VfzNzJ7W5eSZdFGsNhGx2WgSaBldcxokpPihGBrBgk8OzmPiWD3X+MGDwQUTdLkRrRPYKKs7i+ZKn5t+1KiBubLxK1hL3q4wgsrth9lepC7mSZwFk3FzHkXfwRswQ5fqFSaHS0G+JwK6Glf1ZKOoogQEPGa3YYUChfAGhjXb8KxtoKqYwfSny2VYEUBK16AfAHDljpkopmF5HYlTC0Z1PfGsZ1Eht"
+  default     = "ssh-rsa AAAAB3NzaC1y"
   description = "SSH key"
 }
