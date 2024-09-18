@@ -1,7 +1,7 @@
 variable "key_path" {
   type        = string
   default     = ""
-  description = "Name  (e.g. `~/.ssh/id_rsa.pub` or `ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD3F6tyPEFEzV0LX3X8BsXdMsQ`)."
+  description = "Name  (e.g. `~/.ssh/id_rsa.pub` or `ssh-rsa AAUB1k= baldev@baldev`)."
 }
 
 variable "key_name" {
@@ -18,6 +18,6 @@ variable "enable_ssh_key" {
 }
 variable "ssh_key" {
   type        = string
-  default     = "ssh-rsa AAAAB3NzaC1y"
+  default     = "ssh-rsa AAAZd28ZjgQUB1k= baldev@baldev"
   description = "SSH key"
 }
