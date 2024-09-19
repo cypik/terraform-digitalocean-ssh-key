@@ -25,8 +25,8 @@ To get started, make sure you have configured your DigitalOcean provider. You ca
 ```hcl
 module "ssh-key" {
   source         = "cypik/ssh-key/digitalocean"
-  version        = "1.0.1"
-  key_path       = "~/.ssh/id_rsa.pub"
+  version        = "1.0.2"
+  ssh_key       = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABA1k= testing"
   key_name       = "devops"
   enable_ssh_key = true
 }
@@ -48,14 +48,14 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.6.6 |
-| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | >= 2.34.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9.5 |
+| <a name="requirement_digitalocean"></a> [digitalocean](#requirement\_digitalocean) | >= 2.40.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | >= 2.34.1 |
+| <a name="provider_digitalocean"></a> [digitalocean](#provider\_digitalocean) | >= 2.40.0 |
 
 ## Modules
 
@@ -73,8 +73,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_enable_ssh_key"></a> [enable\_ssh\_key](#input\_enable\_ssh\_key) | A boolean flag to enable/disable ssh key. | `bool` | `true` | no |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | Name  (e.g. `it-admin` or `devops`). | `string` | `""` | no |
-| <a name="input_key_path"></a> [key\_path](#input\_key\_path) | Name  (e.g. `~/.ssh/id_rsa.pub` or `ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD3F6tyPEFEzV0LX3X8BsXdMsQ`). | `string` | `""` | no |
-| <a name="input_ssh_key"></a> [ssh\_key](#input\_ssh\_key) | SSH key | `string` | `"ssh-rsa AAAAB3NzaC1y"` | no |
+| <a name="input_key_path"></a> [key\_path](#input\_key\_path) | Name (e.g. `~/.ssh/id_rsa.pub` ). | `string` | `""` | no |
+| <a name="input_ssh_key"></a> [ssh\_key](#input\_ssh\_key) | A list of SSH Keys. Each SSH Key has the following attributes | `string` | `"ssh-rsa AmwCKVvPJGcpT2hPGVtFE= testing"` | no |
 
 ## Outputs
 
