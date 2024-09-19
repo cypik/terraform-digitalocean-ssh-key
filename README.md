@@ -74,7 +74,7 @@ No modules.
 | <a name="input_enable_ssh_key"></a> [enable\_ssh\_key](#input\_enable\_ssh\_key) | A boolean flag to enable/disable ssh key. | `bool` | `true` | no |
 | <a name="input_key_name"></a> [key\_name](#input\_key\_name) | Name  (e.g. `it-admin` or `devops`). | `string` | `""` | no |
 | <a name="input_key_path"></a> [key\_path](#input\_key\_path) | Name (e.g. `~/.ssh/id_rsa.pub` ). | `string` | `""` | no |
-| <a name="input_ssh_key"></a> [ssh\_key](#input\_ssh\_key) | A list of SSH Keys. Each SSH Key has the following attributes: | `string` | `"ssh-rsa AmwCKVvPJGcpT2hPGVtFE= testing"` | no |
+| <a name="input_ssh_key"></a> [ssh\_key](#input\_ssh\_key) | A list of SSH Keys. Each SSH Key has the following attributes | `string` | `"ssh-rsa AmwCKVvPJGcpT2hPGVtFE= testing"` | no |
 
 ## Outputs
 
