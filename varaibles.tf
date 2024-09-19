@@ -19,5 +19,5 @@ variable "enable_ssh_key" {
 variable "ssh_key" {
   type        = string
   default     = "ssh-rsa AmwCKVvPJGcpT2hPGVtFE= testing"
-  description = "A list of SSH Keys. Each SSH Key has the following attributes:"
+  description = "A list of SSH Keys. Each SSH Key has the following attributes"
 }

@@ -26,7 +26,7 @@ To get started, make sure you have configured your DigitalOcean provider. You ca
 module "ssh-key" {
   source         = "cypik/ssh-key/digitalocean"
   version        = "1.0.2"
-  key_path       = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABA1k= testing"
+  ssh_key       = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABA1k= testing"
   key_name       = "devops"
   enable_ssh_key = true
 }
