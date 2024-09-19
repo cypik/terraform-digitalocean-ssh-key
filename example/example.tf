@@ -4,7 +4,7 @@ provider "digitalocean" {
 
 module "ssh-key" {
   source         = "./../"
-  key_path       = "~/.ssh/id_rsa.pub"
+  ssh_key        = "ssh-rsa AAAAB3NwnzynV4cpT2hPGVtFE= testing"
   key_name       = "devops"
   enable_ssh_key = true
 }
